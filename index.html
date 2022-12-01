@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form novalidate>
+    <p>
+     <label for="mail">
+        <span>Inform your E-Mail</span>
+        <input type="email" name="mail" id="mail" minlength="8" maxlength="44" required>
+        <span class="error" aria-live="polite">
+      </span>
+     </label>
+    </p>
+    <p>
+     <label for="country">
+        <span>Inform your country</span>
+        <input type="text" name="country" id="country" minlength="4" maxlength="20" required>
+        <span class="error" aria-live="polite">
+      </span>
+     </label>
+    </p>
+    <p>
+     <label for="zip">
+        <span>Inform your Zipcode</span>
+        <input type="number" name="zip" id="zip" minlength="8" maxlength="16" required>
+        <span class="error" aria-live="polite">
+      </span>
+     </label>
+    </p>
+    <p>
+     <label for="psw">
+        <span>Create your Password</span>
+        <input type="password" name="psw" id="psw" minlength="8" maxlength="28" required>
+        <span class="error" aria-live="polite">
+        </span>
+     </label>
+    </p>
+    <p>
+     <label for="pswConf">
+        <span>Confirm your Password</span>
+        <input type="password" name="pswConf" id="pswConf" required>
+        <span class="error" aria-live="polite">
+        </span>
+     </label>
+    </p>
+       <!-- <input type="submit" value="Submit"> -->
+       <button>Submit</button>
+    </form>
+</body>
+</html>
