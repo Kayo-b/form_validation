@@ -24,7 +24,7 @@ input[type="email"][type="text"][type="password"] {
 
 /*Style for invalid fields*/
 
-input:invalid {
+input:focus:invalid {
     border-color: #900;
     background-color: #fdd;
 }
@@ -38,8 +38,7 @@ input:focus:invalid {
 .error {
     width: 100%;
     padding: 0;
-
-    font-size: 80%;
+    font-size: 70%;
     color: white;
     background-color: #900;
     border-radius: 0 0 5px 5px;
